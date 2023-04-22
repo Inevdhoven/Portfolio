@@ -150,14 +150,16 @@ a.button {
 }
 
 @media (max-width: 76.875rem) {
-  .city-trip .header-work-next {
+  .city-trip .header-work-next,
+  .bibliotheek .header-work-next {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .city-trip .header-work-next h1 {
+  .city-trip .header-work-next h1,
+  .bibliotheek .header-work-next h1 {
     max-width: 100%;
     text-align: center;
   }

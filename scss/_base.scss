@@ -115,7 +115,8 @@ a.button {
     }
 }
 
-.city-trip .header-work-next {
+.city-trip .header-work-next,
+.bibliotheek .header-work-next {
     @media (max-width: 76.875rem){
         flex-wrap: wrap; 
         justify-content: center;
