@@ -1,0 +1,115 @@
+section.work {
+    margin: 100px auto 70px;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        margin: 30px 0 60px;
+        list-style: none;
+
+        @media (max-width: 1024px){
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr;
+        }
+
+        li {
+            background-color: $white;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+
+            @media (max-width: 1024px){
+                width: 100%;
+                min-height: 325px;
+            }
+
+            @media (max-width: 768px){
+                min-height: 270px;
+            }
+
+            @media (max-width: 540px){
+                max-width: 100%;
+            }
+        }
+
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                order: -1;
+                flex-grow: 1;
+                margin-bottom: 20px;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+
+            h3 {
+                min-height: 60px;
+            }
+        }
+    }
+
+    .button {
+        border: 2px solid $black;
+        transition: 250ms ease-in;
+
+        &:hover {
+            background-color: transparent;
+            color: $black;
+        }
+    }
+}
+
+.page-template-archive-work section.work {
+    margin-bottom: 100px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+ 
+        @media (max-width: 1024px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 540px){
+            grid-template-columns: 1fr;
+        }
+
+        li {
+            width: 100%;
+            min-height: 325px;
+
+            @media (max-width: 768px){
+                min-height: 270px;
+            }
+        }
+    }
+}

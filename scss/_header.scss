@@ -1,0 +1,141 @@
+section.header {
+    height: calc(100dvh - 15em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 479px){
+        height: calc(70dvh - 70px);
+    }
+
+    h2 {
+        @media (max-width: 1024px){
+            font-size: 55px;
+            margin-bottom: 30px;
+        } 
+
+        @media (max-width: 600px){
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 479px){
+            font-size: 35px;
+        }
+
+        @media (max-width: 374px){
+            font-size: 25px;
+        }
+    }
+
+    h2:first-of-type strong {
+        transition: 250ms ease-in;
+
+        @media (max-width: 1024px) {
+            display: inline-block;
+        } 
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    h2:last-of-type strong {
+        transition: 250ms ease-in;
+
+        &:first-of-type:hover {
+            background-color: $light-blue;
+        }
+
+        &:last-of-type:hover {
+            background-color: $green;
+        }
+    }
+
+    .buttons {
+        margin-top: 40px;
+
+        @media (max-width: 420px){
+            margin-top: 20px;
+        }
+
+        .button:first-of-type {
+            margin-right: 20px;
+            transition: 250ms ease-in;
+
+            @media (max-width: 420px){
+                margin-right: 0;
+                display: block;
+                text-align: center;
+            }
+
+            &:hover {
+                background-color: $blue;
+                color: $black;
+            }
+        }
+
+        .button:last-of-type {
+            background-color: $green;
+            color: $black;
+            transition: 250ms ease-in;
+
+            @media (max-width: 420px){
+                margin-top: 20px;
+                display: block;
+                text-align: center;
+            }
+
+            &:hover {
+                background-color: $light-blue;
+            }
+        }
+    }
+}
+
+section.header-work {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px){
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 80px;
+
+        @media (max-width: 1024px){
+            font-size: 60px;
+        }
+
+        @media (max-width: 768px){
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 479px){
+            font-size: 50px;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+
+        @media (max-width: 768px){
+            width: 100%;
+        }
+
+        img {
+            width: auto;
+            height: 90vh;
+
+            @media (max-width: 1024px){
+                height: 60vh;
+            }
+        }
+    }
+}

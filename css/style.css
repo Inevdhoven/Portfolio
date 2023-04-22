@@ -1,0 +1,536 @@
+/***************** FONTS *****************/
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(../fonts/poppins-medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../fonts/poppins-bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: url(../fonts/poppins-extrabold.ttf);
+    font-weight: 800;
+}
+
+/***************** VARIABLES *****************/
+:root {
+    --green: #B4FDDA;
+    --blue: #B4D8FE;
+    --light-blue: #B4FDFE;
+    --black: #212121;
+    --white: #fff;
+    --medium: 'Poppins Medium', sans-serif;
+    --bold: 'Poppins Bold', sans-serif;
+    --extrabold: 'Poppins ExtraBold', sans-serif;
+}
+
+/***************** GENERAL *****************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/longbackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0; 
+    color: var(--black);
+    overflow-x: hidden; 
+}
+
+
+h1 {
+    font-family: var(--extrabold);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h1 strong {
+    color: var(--blue);
+}
+
+h2 {
+    font-family: var(--extrabold);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h2 strong {
+    font-weight: 800;
+}
+
+h3 {
+    font-family: var(--bold);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--medium);
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--black);
+}
+
+a {
+    font-family: var(--medium);
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--black);
+    text-decoration: none;
+}
+
+nav, section {
+    width: 100%;
+}
+
+header, section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a.button {
+    background-color: var(--black);
+    padding: 10px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media (min-width: 768px) and (max-width: 1299px) {
+    main {
+        padding: 0 10%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    main {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 76.875rem) {
+    header, section {
+        padding: 1.25rem 4em;
+    }
+}
+
+@media (max-width: 43.625rem) {
+    nav, section {
+        width: auto;
+    }
+}
+
+@media (max-width: 29.9375rem) {
+    header, section {
+        padding: 1.25rem 1em;
+    }
+}
+
+@media (max-width: 479px){
+    h2 {
+        font-size: 25px;
+    }
+}
+
+/***************** MENU *****************/
+header {
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    font-family: var(--extrabold);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h1 strong,
+h2 strong {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+header a {
+    width: 100%;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+header nav .mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    header nav .mobile-menu {
+        display: block;
+        height: 30px;
+        width: 30px;
+        right: 0;
+        top: 0;
+        position: relative;
+        cursor: pointer;
+    }
+    header nav .mobile-menu button {
+        background-color: var(--black);
+        width: 30px;
+        height: 3px;
+        border: none;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    header nav .mobile-menu button.open {
+        background-color: transparent;
+    }
+
+    header nav .mobile-menu button.open::before {
+        background-color: var(--black);
+        transform: rotate(45deg);
+        top: 10px;
+    }
+
+    header nav .mobile-menu button.open::after {
+        background-color: var(--black);
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+
+    button::before,
+    button::after {
+        background-color: var(--black);
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        right: 0;
+        transition: 350ms ease-in;
+    }
+
+    button::before {
+        content: '';
+        top: 3px;
+    }
+
+    button::after {
+        content: '';
+        top: 23px;
+    }
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 1024px){
+    ul {
+        background-color: #fff;
+        display: block;
+        width: 300px;
+        height: auto;
+        padding: 30px;
+        border-radius: 25px;
+        position: absolute;
+        top: 50px;
+        right: -380px;
+        z-index: 1;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+        transition: 350ms ease-in;
+    }
+
+    ul.open {
+        right: 0;
+    }
+
+    ul.open li a:hover::after {
+        height: 0px;
+    }
+}
+
+@media (max-width: 767px){
+    ul.open {
+        right: 5%;
+    }
+}
+
+@media (max-width: 1024px){
+    li {
+        padding: 15px 0;
+    }
+}
+
+li.current-menu-item a {
+    font-weight: 700;
+}
+
+li.current-menu-item a::after {
+    content: '';
+    background-color: var(--green);
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: height 250ms ease-in;
+}
+
+li a {
+    margin: 0 20px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+
+li a::after {
+    content: '';
+    background-color: var(--green);
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: height 250ms ease-in;
+}
+
+li a:hover::after {
+    height: 6px;
+}
+
+/***************** FOOTER *****************/
+
+footer {
+    background-image: url(../images/footer-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+@media (max-width: 479px){
+    footer ul li {
+        margin: 0 5px;
+    }
+}
+
+footer ul li a {
+    display: block;
+    position: relative;
+    font-size: 0;
+}
+
+footer ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer p {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.over-mij footer {
+    background-image: url(../images/footer-background-green.svg);
+}
+
+/***************** HEADER *****************/
+section.header {
+    height: calc(100dvh - 15em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 479px){
+    section.header {
+        height: calc(70dvh - 70px);
+    }
+}
+
+@media (max-width: 1024px){
+    section.header h2 {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    section.header {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 479px){
+    section.header h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 374px){
+    section.header h2 {
+        font-size: 25px;
+    }
+}
+
+h2:first-of-type strong {
+    transition: 250ms ease-in;
+}
+
+@media (max-width: 1024px) {
+    h2:first-of-type strong {
+        display: inline-block;
+    }
+} 
+
+h2:first-of-type strong:hover {
+    background-color: var(--blue);
+}
+
+h2:last-of-type strong {
+    transition: 250ms ease-in;
+}
+
+h2:last-of-type strong:first-of-type:hover {
+    background-color: var(--light-blue);
+}
+
+h2:last-of-type strong:last-of-type:hover {
+    background-color: var(--green);
+}
+
+section.header .buttons {
+    margin-top: 40px;
+}
+
+@media (max-width: 420px) {
+    section.header .buttons {
+        margin-top: 20px;
+    }
+}
+
+section.header .buttons .button:first-of-type  {
+    margin-right: 20px;
+    transition: 250ms ease-in;
+}
+
+@media (max-width: 420px){
+    section.header .buttons .button:first-of-type {
+        margin-right: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+section.header .buttons .button:first-of-type:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+section.header .buttons {
+    background-color: var(--green);
+    color: var(--black);
+    transition: 250ms ease-in;
+}
+
+@media (max-width: 420px) {
+    section.header .buttons {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}
+
+section.header .buttons:hover {
+    background-color: var(--light-blue);
+}
+
+section.header-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    section.header-work {
+        flex-wrap: wrap;
+    }
+}
+
+section.header-work h1 {
+    font-size: 80px;
+}
+@media (max-width: 1024px){
+    section.header-work h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px){
+    section.header-work h1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 479px){
+    section.header-work h1 {
+        font-size: 50px;
+    }
+}
+
+section.header-work div {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+@media (max-width: 768px){
+    section.header-work div {
+        width: 100%;
+    }
+}
+
+section.header-work div img {
+    width: auto;
+    height: 90vh;
+}
+
+@media (max-width: 1024px){
+    section.header-work div img {
+        height: 60vh;
+    }
+}
