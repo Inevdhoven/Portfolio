@@ -992,7 +992,8 @@ section.work .button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: calc(100vh - 100px);
+  height: calc(70vh - 100px);
+  margin-top: 5em;
 }
 
 @media (max-width: 48rem) {
