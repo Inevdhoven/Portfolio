@@ -24,7 +24,7 @@ main {
 }
 
 h1 {
-    font-family: $font;
+    font-family: $font-extrabold;
     font-size: 30px;
     font-weight: 800;
 
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-family: $font;
+    font-family: $font-extrabold;
     font-size: 40px;
     font-weight: 800;
 
@@ -48,20 +48,20 @@ h2 {
 }
 
 h3 {
-    font-family: $font;
+    font-family: $font-bold;
     font-size: 20px;
     font-weight: 700;
 }
 
 p {
-    font-family: $font;
+    font-family: $font-medium;
     font-size: 1em;
     font-weight: 500;
     color: $black;
 }
 
 a {
-    font-family: $font;
+    font-family: $font-medium;
     font-size: 1em;
     font-weight: 500;
     color: $black;

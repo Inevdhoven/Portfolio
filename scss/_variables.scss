@@ -1,4 +1,25 @@
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(../fonts/poppins-medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../fonts/poppins-bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: url(../fonts/poppins-extrabold.ttf);
+    font-weight: 800;
+}
+
 $font: Poppins, 'sans-serif';
+$font-medium: 'Poppins Medium', 'sans-serif';
+$font-bold: 'Poppins Bold', 'sans-serif';
+$font-extrabold: 'Poppins ExtraBold', 'sans-serif';
 
 $green: #B4FDDA;
 $blue: #B4D8FE;

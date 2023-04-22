@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url(../fonts/poppins-medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url(../fonts/poppins-bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins ExtraBold';
+  src: url(../fonts/poppins-extrabold.ttf);
+  font-weight: 800;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -27,7 +45,7 @@ body {
 }
 
 h1 {
-  font-family: Poppins, "sans-serif";
+  font-family: "Poppins ExtraBold", "sans-serif";
   font-size: 30px;
   font-weight: 800;
 }
@@ -37,7 +55,7 @@ h1 strong {
 }
 
 h2 {
-  font-family: Poppins, "sans-serif";
+  font-family: "Poppins ExtraBold", "sans-serif";
   font-size: 40px;
   font-weight: 800;
 }
@@ -53,20 +71,20 @@ h2 strong {
 }
 
 h3 {
-  font-family: Poppins, "sans-serif";
+  font-family: "Poppins Bold", "sans-serif";
   font-size: 20px;
   font-weight: 700;
 }
 
 p {
-  font-family: Poppins, "sans-serif";
+  font-family: "Poppins Medium", "sans-serif";
   font-size: 1em;
   font-weight: 500;
   color: #212121;
 }
 
 a {
-  font-family: Poppins, "sans-serif";
+  font-family: "Poppins Medium", "sans-serif";
   font-size: 1em;
   font-weight: 500;
   color: #212121;
@@ -131,7 +149,7 @@ header {
 }
 
 header h1, header h2 {
-  font-family: Poppins, "sans-serif";
+  font-family: "Poppins ExtraBold", "sans-serif";
   font-size: 30px;
   font-weight: 800;
 }
