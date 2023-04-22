@@ -138,6 +138,17 @@ a.button {
   color: #fff;
 }
 
+.energie-besparen .header-work-under {
+  height: calc(100dvh - 100px);
+  margin-top: 2em;
+}
+
+@media (max-width: 48rem) {
+  .energie-besparen .header-work-under {
+    height: calc(100dvh - 100px);
+  }
+}
+
 header {
   padding: 20px 0;
   display: -webkit-box;
@@ -1166,17 +1177,6 @@ article .image img {
 @media (max-width: 767px) {
   article .image img {
     width: 100%;
-  }
-}
-
-.energie-besparen .header-work-under {
-  height: calc(100dvh - 100px);
-  margin-top: 2em;
-}
-
-@media (max-width: 48rem) {
-  .energie-besparen .header-work-under {
-    height: calc(100dvh - 100px);
   }
 }
 /*# sourceMappingURL=style.css.map */
