@@ -114,3 +114,15 @@ a.button {
         height: calc(100dvh - 100px);
     }
 }
+
+.city-trip .header-work-next {
+    @media (max-width: 76.875rem){
+        flex-wrap: wrap; 
+        justify-content: center;
+
+        h1 {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
