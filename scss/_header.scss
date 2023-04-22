@@ -4,8 +4,8 @@ section.header {
     flex-direction: column;
     justify-content: center;
 
-    @media (max-width: 479px){
-        height: calc(70dvh - 70px);
+    @media (max-width: 768px){
+        height: calc(100dvh - 5em);
     }
 
     h2 {
@@ -15,7 +15,7 @@ section.header {
         } 
 
         @media (max-width: 600px){
-            font-size: 45px;
+            font-size: 40px;
             margin-bottom: 20px;
         }
 

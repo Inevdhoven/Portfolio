@@ -347,9 +347,9 @@ section.header {
           justify-content: center;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 768px) {
   section.header {
-    height: calc(70dvh - 70px);
+    height: calc(100dvh - 5em);
   }
 }
 
@@ -362,7 +362,7 @@ section.header {
 
 @media (max-width: 600px) {
   section.header h2 {
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
 }
@@ -859,7 +859,6 @@ section.work .button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
   margin: 50px auto 80px;
 }
 
