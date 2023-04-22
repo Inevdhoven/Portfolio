@@ -60,6 +60,12 @@ h2 {
   font-weight: 800;
 }
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 479px) {
   h2 {
     font-size: 25px;
@@ -115,6 +121,12 @@ header, section {
 @media (max-width: 29.9375rem) {
   header, section {
     padding: 1.25rem 1em;
+  }
+}
+
+@media (max-width: 29.9375rem) {
+  section {
+    padding: 1.25rem 0;
   }
 }
 
@@ -356,7 +368,7 @@ section.header {
 
 @media (max-width: 1024px) {
   section.header h2 {
-    font-size: 55px;
+    font-size: 45px;
     margin-bottom: 30px;
   }
 }
@@ -1159,6 +1171,7 @@ article .image img {
 
 .energie-besparen .header-work-under {
   height: calc(100dvh - 100px);
+  margin-top: 2em;
 }
 
 @media (max-width: 48rem) {
