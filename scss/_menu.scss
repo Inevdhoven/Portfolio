@@ -112,10 +112,12 @@ header {
                 border-radius: 25px;
                 position: absolute;
                 top: 50px;
-                right: -380px;
+                // right: -380px;
+                right: 0;
                 z-index: 1;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
                 transition: 350ms ease-in;
+                opacity: 0;
 
                 &.open {
                     right: 0;
@@ -127,7 +129,8 @@ header {
 
             @media (max-width: 767px){
                 &.open {
-                    right: 5%;
+                    right: 0;
+                    opacity: 1;
                 }
             }
 
