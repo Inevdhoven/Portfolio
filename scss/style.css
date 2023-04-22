@@ -269,6 +269,7 @@ header nav ul {
   }
   header nav ul.open {
     right: 0;
+    opacity: 1;
   }
   header nav ul.open li a:hover::after {
     height: 0px;
@@ -277,7 +278,7 @@ header nav ul {
 
 @media (max-width: 767px) {
   header nav ul.open {
-    right: 0;
+    right: 5%;
     opacity: 1;
   }
 }
@@ -1153,6 +1154,16 @@ article .image img {
 @media (max-width: 767px) {
   article .image img {
     width: 100%;
+  }
+}
+
+.energie-besparen .header-work-under {
+  height: calc(100dvh - 100px);
+}
+
+@media (max-width: 48rem) {
+  .energie-besparen .header-work-under {
+    height: calc(100dvh - 100px);
   }
 }
 /*# sourceMappingURL=style.css.map */
